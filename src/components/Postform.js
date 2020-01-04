@@ -30,18 +30,18 @@ export class Postform extends Component {
             <div>
                 <h1>Add Post</h1>
                 <form onSubmit={this.onSubmit}> 
-                    <div>
+                    <div className="form-group">
                         <label>Title:</label><br />
-                        <input type="text" name="title" onChange={this.onChange} value={this.state.title} />
+                        <input type="text" name="title" onChange={this.onChange} value={this.state.title} className="form-control" />
 
                     </div>
-                    <div>
+                    <div className="form-group">
                         <label>Body:</label><br />
-                        <textarea name="body" onChange={this.onChange} value={this.state.body}/> <br />
+                        <textarea name="body" onChange={this.onChange} value={this.state.body} className="form-control" /> <br />
 
                         
                     </div>
-                    <button type="submit" value="Submit">submit</button>
+                    <button type="submit" value="Submit" className="btn btn-info">submit</button>
                 </form>
             </div>
         )
