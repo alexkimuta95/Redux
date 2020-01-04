@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Header from './components/layout/Header';
 
 import './App.css';
 import { Provider } from 'react-redux';
@@ -14,6 +15,7 @@ export class App extends Component {
     return (
       <Provider store={store} >
       <div className="App">
+        <Header />
         <Postform /> <hr />
         <Posts />
       </div>
